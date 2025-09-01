@@ -52,6 +52,8 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/**").permitAll()
+                        .requestMatchers("/api/files/**").permitAll()  // Allow public access to files
+                        .requestMatchers("/uploads/**").permitAll()    // Allow public access to uploaded files
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .requestMatchers("/api/province/**").hasAnyRole("ADMIN", "PROVINCE_MANAGER")
                         .requestMatchers("/api/librarian/**").hasAnyRole("ADMIN", "PROVINCE_MANAGER", "LIBRARIAN")
