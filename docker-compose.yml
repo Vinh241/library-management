@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  library-postgres:
+    image: postgres:16.2-alpine3.19
+    container_name: library-postgres
+    restart: always
+    environment:
+      - 'POSTGRES_DB=${POSTGRES_DB}'
+      - 'POSTGRES_USER=${POSTGRES_USER}'
+      - 'POSTGRES_PASSWORD=${POSTGRES_PASSWORD}'
+      - 'PGDATA=/pgdata'
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - ./postgres-data:/pgdata
+      - ./sql/:/docker-entrypoint-initdb.d
+    networks:
+      - library-network
+
+  # PgAdmin for Database Management
+  library-pgadmin:
+    image: dpage/pgadmin4:8.5
+    container_name: library-pgadmin
+    restart: always
+    user: 'root'
+    environment:
+      - 'PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL}'
+      - 'PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}'
+    ports:
+      - "5050:80"
+    volumes:
+      - ./pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - library-postgres
+    networks:
+      - library-network
+
+  # app:
+  #   build: .
+  #   container_name: library_app
+  #   restart: unless-stopped
+  #   environment:
+  #     - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE:-docker}
+  #     - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${DB_NAME}
+  #     - SPRING_DATASOURCE_USERNAME=${DB_USERNAME}
+  #     - SPRING_DATASOURCE_PASSWORD=${DB_PASSWORD}
+  #     - JWT_SECRET=${JWT_SECRET}
+  #     - JWT_EXPIRATION=${JWT_EXPIRATION}
+  #   ports:
+  #     - "${SERVER_PORT:-8080}:8080"
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #   networks:
+  #     - library-network
+
+
+# Network để services giao tiếp với nhau
+networks:
+  library-network:
+    driver: bridge
