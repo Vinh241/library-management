@@ -38,11 +38,7 @@ public class BorrowRequestService {
     @Autowired
     private BorrowingTransactionService borrowingTransactionService;
 
-    // === CREATE BORROW REQUEST ===
-
-    /**
-     * Tạo yêu cầu mượn sách mới (đã xử lý race condition)
-     */
+    @Transactional(rollbackFor = {Exception.class})
     public BorrowRequestResponse createBorrowRequest(BorrowRequestRequest request, Integer requesterId) {
         // Sử dụng pessimistic lock để tránh race condition khi nhiều người cùng mượn 1 sách
         BookItem bookItem = bookItemRepository.findByIdWithLock(request.getBookItemId())

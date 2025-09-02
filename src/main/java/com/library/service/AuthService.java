@@ -63,6 +63,11 @@ public class AuthService {
             throw new RuntimeException("Email already exists");
         }
 
+        // Enforce self-registration role to READER only
+        if (request.getRole() != null && !"READER".equalsIgnoreCase(request.getRole())) {
+            throw new RuntimeException("Only READER role is allowed for self-registration. Other roles must be created by an admin.");
+        }
+
         // Create new account
         Account account = new Account();
         account.setUsername(request.getUsername());
@@ -71,7 +76,44 @@ public class AuthService {
         account.setEmail(request.getEmail());
         account.setPhone(request.getPhone());
         account.setAddress(request.getAddress());
-        account.setRole(Account.Role.valueOf(request.getRole() != null ? request.getRole() : "READER"));
+        account.setRole(Account.Role.READER);
+        account.setLibraryId(request.getLibraryId());
+        account.setProvinceId(request.getProvinceId());
+        account.setCommuneId(request.getCommuneId());
+
+        accountRepository.save(account);
+    }
+
+    public void createUserByAdmin(RegisterRequest request) {
+        // Check if username exists
+        if (accountRepository.existsByUsername(request.getUsername())) {
+            throw new RuntimeException("Username already exists");
+        }
+
+        // Check if email exists
+        if (request.getEmail() != null && accountRepository.existsByEmail(request.getEmail())) {
+            throw new RuntimeException("Email already exists");
+        }
+
+        // Parse role (default READER if not provided)
+        Account.Role role;
+        try {
+            role = request.getRole() == null
+                    ? Account.Role.READER
+                    : Account.Role.valueOf(request.getRole().toUpperCase());
+        } catch (IllegalArgumentException ex) {
+            throw new RuntimeException("Invalid role value");
+        }
+
+        // Create new account
+        Account account = new Account();
+        account.setUsername(request.getUsername());
+        account.setPasswordHash(passwordEncoder.encode(request.getPassword()));
+        account.setFullName(request.getFullName());
+        account.setEmail(request.getEmail());
+        account.setPhone(request.getPhone());
+        account.setAddress(request.getAddress());
+        account.setRole(role);
         account.setLibraryId(request.getLibraryId());
         account.setProvinceId(request.getProvinceId());
         account.setCommuneId(request.getCommuneId());

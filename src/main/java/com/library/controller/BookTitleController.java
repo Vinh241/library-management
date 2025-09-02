@@ -9,6 +9,7 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,6 +28,7 @@ public class BookTitleController {
      * POST /api/books - Tạo book title mới
      */
     @PostMapping
+    @PreAuthorize("hasRole('ADMIN') or hasRole('LIBRARIAN') or hasRole('PROVINCE_MANAGER')")
     public ResponseEntity<BookTitleResponse> createBook(@Valid @RequestBody BookTitleRequest bookTitleRequest) {
         try {
             BookTitleResponse createdBook = bookTitleService.createBook(bookTitleRequest);
@@ -41,6 +43,7 @@ public class BookTitleController {
      * PUT /api/books/{id} - Cập nhật book title
      */
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('LIBRARIAN') or hasRole('PROVINCE_MANAGER')")
     public ResponseEntity<BookTitleResponse> updateBook(@PathVariable Integer id, 
                                                    @Valid @RequestBody BookTitleRequest bookTitleRequest) {
         try {
@@ -59,6 +62,7 @@ public class BookTitleController {
      * DELETE /api/books/{id} - Xóa book title
      */
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('LIBRARIAN') or hasRole('PROVINCE_MANAGER')")
     public ResponseEntity<Void> deleteBook(@PathVariable Integer id) {
         try {
             boolean deleted = bookTitleService.deleteBook(id);
