@@ -32,7 +32,6 @@ class PerformanceTester {
             if (response.ok) {
                 const data = await response.json();
                 this.authToken = data.token;
-                console.log('✅ Đăng nhập thành công');
                 return true;
             } else {
                 console.error('❌ Đăng nhập thất bại:', response.status);
@@ -94,7 +93,6 @@ class PerformanceTester {
      * Test performance của một endpoint với nhiều lần gọi
      */
     async testEndpointPerformance(name, url, options = {}, iterations = 10) {
-        console.log(`🧪 Testing ${name} (${iterations} iterations)...`);
 
         const results = [];
         let successCount = 0;
@@ -121,7 +119,7 @@ class PerformanceTester {
             }
         }
 
-        console.log(''); // New line after progress
+        // New line after progress
 
         const avgDuration = successCount > 0 ? totalDuration / successCount : 0;
         const successRate = (successCount / iterations) * 100;
@@ -141,10 +139,6 @@ class PerformanceTester {
             results
         };
 
-        console.log(`   ✅ Success Rate: ${successRate.toFixed(1)}%`);
-        console.log(`   ⏱️  Avg Duration: ${avgDuration.toFixed(2)}ms`);
-        console.log(`   📊 Min/Max: ${minDuration}ms / ${maxDuration}ms`);
-        console.log(`   📦 Avg Response Size: ${Math.round(avgResponseSize)} bytes`);
 
         return summary;
     }
@@ -153,7 +147,6 @@ class PerformanceTester {
      * Test tất cả các endpoints chính
      */
     async runAllTests() {
-        console.log('🚀 Bắt đầu Performance Testing...\n');
 
         const tests = [
             // Book Title Tests
@@ -254,7 +247,7 @@ class PerformanceTester {
                     20 // 20 iterations per test
                 );
                 allResults.push(result);
-                console.log(''); // Empty line between tests
+                // Empty line between tests
             } catch (error) {
                 console.error(`❌ Lỗi test ${test.name}:`, error.message);
                 allResults.push({
@@ -273,13 +266,11 @@ class PerformanceTester {
      * Test performance với các kích thước page khác nhau
      */
     async testPaginationPerformance() {
-        console.log('📄 Testing Pagination Performance...\n');
 
         const pageSizes = [10, 20, 50, 100, 200];
         const results = [];
 
         for (const size of pageSizes) {
-            console.log(`🧪 Testing page size: ${size}`);
 
             const result = await this.testEndpointPerformance(
                 `Books Pagination (Size ${size})`,
@@ -289,7 +280,6 @@ class PerformanceTester {
             );
 
             results.push(result);
-            console.log('');
         }
 
         return results;
@@ -299,13 +289,11 @@ class PerformanceTester {
      * Test performance với các từ khóa tìm kiếm khác nhau
      */
     async testSearchPerformance() {
-        console.log('🔍 Testing Search Performance...\n');
 
         const keywords = ['java', 'spring', 'database', 'programming', 'development'];
         const results = [];
 
         for (const keyword of keywords) {
-            console.log(`🧪 Testing search keyword: "${keyword}"`);
 
             const result = await this.testEndpointPerformance(
                 `Search Books (Keyword: ${keyword})`,
@@ -315,7 +303,6 @@ class PerformanceTester {
             );
 
             results.push(result);
-            console.log('');
         }
 
         return results;
@@ -325,22 +312,16 @@ class PerformanceTester {
      * Tạo báo cáo tổng hợp
      */
     generateReport(allResults) {
-        console.log('\n📊 BÁO CÁO TỔNG HỢP PERFORMANCE TESTING\n');
-        console.log('='.repeat(80));
 
         // Sắp xếp theo thời gian trung bình
         const sortedResults = allResults
             .filter(r => r.avgDuration !== undefined)
             .sort((a, b) => a.avgDuration - b.avgDuration);
 
-        console.log('\n🏆 TOP 5 ENDPOINTS NHANH NHẤT:');
         sortedResults.slice(0, 5).forEach((result, index) => {
-            console.log(`${index + 1}. ${result.name}: ${result.avgDuration}ms (${result.successRate}% success)`);
         });
 
-        console.log('\n🐌 TOP 5 ENDPOINTS CHẬM NHẤT:');
         sortedResults.slice(-5).reverse().forEach((result, index) => {
-            console.log(`${index + 1}. ${result.name}: ${result.avgDuration}ms (${result.successRate}% success)`);
         });
 
         // Thống kê tổng quan
@@ -350,22 +331,12 @@ class PerformanceTester {
         const maxResponseTime = Math.max(...sortedResults.map(r => r.avgDuration));
         const minResponseTime = Math.min(...sortedResults.map(r => r.avgDuration));
 
-        console.log('\n📈 THỐNG KÊ TỔNG QUAN:');
-        console.log(`   Tổng số tests: ${totalTests}`);
-        console.log(`   Tests thành công (≥95%): ${successfulTests}/${totalTests} (${Math.round(successfulTests / totalTests * 100)}%)`);
-        console.log(`   Thời gian response trung bình: ${avgResponseTime.toFixed(2)}ms`);
-        console.log(`   Thời gian response nhanh nhất: ${minResponseTime}ms`);
-        console.log(`   Thời gian response chậm nhất: ${maxResponseTime}ms`);
 
         // Phân loại theo performance
         const fastEndpoints = sortedResults.filter(r => r.avgDuration < 100).length;
         const mediumEndpoints = sortedResults.filter(r => r.avgDuration >= 100 && r.avgDuration < 500).length;
         const slowEndpoints = sortedResults.filter(r => r.avgDuration >= 500).length;
 
-        console.log('\n⚡ PHÂN LOẠI PERFORMANCE:');
-        console.log(`   Nhanh (<100ms): ${fastEndpoints} endpoints`);
-        console.log(`   Trung bình (100-500ms): ${mediumEndpoints} endpoints`);
-        console.log(`   Chậm (>500ms): ${slowEndpoints} endpoints`);
 
         return {
             summary: {
@@ -393,7 +364,6 @@ class PerformanceTester {
         };
 
         fs.writeFileSync(filename, JSON.stringify(data, null, 2));
-        console.log(`\n💾 Kết quả đã được lưu vào ${filename}`);
     }
 }
 
@@ -415,22 +385,18 @@ async function main() {
 
     switch (testType) {
         case 'all':
-            console.log('🎯 Chạy tất cả performance tests...\n');
             allResults = await tester.runAllTests();
             break;
 
         case 'pagination':
-            console.log('🎯 Chạy pagination performance tests...\n');
             allResults = await tester.testPaginationPerformance();
             break;
 
         case 'search':
-            console.log('🎯 Chạy search performance tests...\n');
             allResults = await tester.testSearchPerformance();
             break;
 
         default:
-            console.log('❌ Loại test không hợp lệ. Sử dụng: all, pagination, search');
             return;
     }
 

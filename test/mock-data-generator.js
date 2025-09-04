@@ -79,7 +79,6 @@ class MockDataGenerator {
             if (response.ok) {
                 const data = await response.json();
                 this.authToken = data.token;
-                console.log('✅ Đăng nhập thành công');
                 return true;
             } else {
                 console.error('❌ Đăng nhập thất bại:', response.status);
@@ -202,7 +201,6 @@ class MockDataGenerator {
      * Tạo dữ liệu mock với số lượng sách cụ thể
      */
     async generateMockData(totalBooks) {
-        console.log(`🚀 Bắt đầu tạo ${totalBooks.toLocaleString()} quyển sách...`);
 
         const startTime = Date.now();
         let successCount = 0;
@@ -217,7 +215,6 @@ class MockDataGenerator {
             const batchEnd = Math.min(batchStart + batchSize, totalBooks);
             const currentBatchSize = batchEnd - batchStart;
 
-            console.log(`📦 Xử lý batch ${batch + 1}/${totalBatches} (${currentBatchSize} items)...`);
 
             // Tạo book titles cho batch này
             const bookTitlePromises = [];
@@ -246,7 +243,6 @@ class MockDataGenerator {
             successCount += batchSuccess;
             errorCount += batchError;
 
-            console.log(`✅ Batch ${batch + 1} hoàn thành: ${batchSuccess} thành công, ${batchError} lỗi`);
 
             // Nghỉ ngắn giữa các batch để tránh quá tải server
             if (batch < totalBatches - 1) {
@@ -257,11 +253,6 @@ class MockDataGenerator {
         const endTime = Date.now();
         const duration = (endTime - startTime) / 1000;
 
-        console.log('\n📊 KẾT QUẢ TẠO DỮ LIỆU:');
-        console.log(`⏱️  Thời gian: ${duration.toFixed(2)} giây`);
-        console.log(`✅ Thành công: ${successCount.toLocaleString()} quyển sách`);
-        console.log(`❌ Lỗi: ${errorCount.toLocaleString()} quyển sách`);
-        console.log(`📈 Tốc độ: ${(successCount / duration).toFixed(2)} quyển/giây`);
 
         return {
             totalBooks,
@@ -282,7 +273,6 @@ class MockDataGenerator {
         };
 
         fs.writeFileSync(filename, JSON.stringify(data, null, 2));
-        console.log(`💾 Kết quả đã được lưu vào ${filename}`);
     }
 }
 
@@ -314,12 +304,9 @@ async function main() {
         }
     }
 
-    console.log(`🎯 Mục tiêu: Tạo ${totalBooks.toLocaleString()} quyển sách`);
-    console.log('⚠️  Cảnh báo: Quá trình này có thể mất rất nhiều thời gian!');
 
     // Xác nhận từ người dùng
     if (totalBooks > 10000) {
-        console.log('\n⏳ Bắt đầu trong 5 giây... (Nhấn Ctrl+C để hủy)');
         await new Promise(resolve => setTimeout(resolve, 5000));
     }
 

@@ -24,7 +24,6 @@ class TestRunner {
      */
     async runScript(scriptPath, args = []) {
         return new Promise((resolve, reject) => {
-            console.log(`\n🚀 Chạy script: ${scriptPath} ${args.join(' ')}`);
 
             const child = spawn('node', [scriptPath, ...args], {
                 stdio: 'inherit',
@@ -33,10 +32,8 @@ class TestRunner {
 
             child.on('close', (code) => {
                 if (code === 0) {
-                    console.log(`✅ Script ${scriptPath} hoàn thành thành công`);
                     resolve({ success: true, code });
                 } else {
-                    console.log(`❌ Script ${scriptPath} thất bại với code ${code}`);
                     resolve({ success: false, code });
                 }
             });
@@ -52,9 +49,6 @@ class TestRunner {
      * Chạy Mock Data Generator
      */
     async runMockDataGenerator(bookCount = '1000') {
-        console.log('\n' + '='.repeat(80));
-        console.log('📚 MOCK DATA GENERATOR');
-        console.log('='.repeat(80));
 
         try {
             const result = await this.runScript('mock-data-generator.js', [bookCount]);
@@ -79,9 +73,6 @@ class TestRunner {
      * Chạy Performance Tester
      */
     async runPerformanceTester(testType = 'all') {
-        console.log('\n' + '='.repeat(80));
-        console.log('⚡ PERFORMANCE TESTER');
-        console.log('='.repeat(80));
 
         try {
             const result = await this.runScript('performance-tester.js', [testType]);
@@ -106,9 +97,6 @@ class TestRunner {
      * Chạy Load Tester
      */
     async runLoadTester(testType = 'all', duration = 5) {
-        console.log('\n' + '='.repeat(80));
-        console.log('🔥 LOAD TESTER');
-        console.log('='.repeat(80));
 
         try {
             const args = [testType];
@@ -139,9 +127,6 @@ class TestRunner {
      * Chạy Database Tester
      */
     async runDatabaseTester(testType = 'all') {
-        console.log('\n' + '='.repeat(80));
-        console.log('🗄️  DATABASE TESTER');
-        console.log('='.repeat(80));
 
         try {
             const result = await this.runScript('database-tester.js', [testType]);
@@ -168,15 +153,6 @@ class TestRunner {
     async runAllTests(options = {}) {
         this.startTime = Date.now();
 
-        console.log('🎯 BẮT ĐẦU CHẠY TẤT CẢ CÁC TEST');
-        console.log('='.repeat(80));
-        console.log(`📅 Thời gian bắt đầu: ${new Date().toLocaleString()}`);
-        console.log(`⚙️  Cấu hình:`);
-        console.log(`   - Mock Data: ${options.mockData || '1000'} quyển sách`);
-        console.log(`   - Performance Test: ${options.performance || 'all'}`);
-        console.log(`   - Load Test: ${options.load || 'all'}`);
-        console.log(`   - Database Test: ${options.database || 'all'}`);
-        console.log('='.repeat(80));
 
         const results = {
             mockData: false,
@@ -190,11 +166,9 @@ class TestRunner {
             results.mockData = await this.runMockDataGenerator(options.mockData || '1000');
 
             if (!results.mockData) {
-                console.log('⚠️  Mock Data Generator thất bại, nhưng vẫn tiếp tục với các test khác...');
             }
 
             // Nghỉ 5 giây sau khi tạo mock data
-            console.log('⏳ Nghỉ 5 giây để hệ thống ổn định...');
             await new Promise(resolve => setTimeout(resolve, 5000));
         }
 
@@ -203,7 +177,6 @@ class TestRunner {
             results.performance = await this.runPerformanceTester(options.performance || 'all');
 
             // Nghỉ 3 giây giữa các test
-            console.log('⏳ Nghỉ 3 giây giữa các test...');
             await new Promise(resolve => setTimeout(resolve, 3000));
         }
 
@@ -212,7 +185,6 @@ class TestRunner {
             results.load = await this.runLoadTester(options.load || 'all', options.loadDuration || 5);
 
             // Nghỉ 3 giây giữa các test
-            console.log('⏳ Nghỉ 3 giây giữa các test...');
             await new Promise(resolve => setTimeout(resolve, 3000));
         }
 
@@ -235,8 +207,6 @@ class TestRunner {
     async runSpecificTest(testType, options = {}) {
         this.startTime = Date.now();
 
-        console.log(`🎯 CHẠY TEST: ${testType.toUpperCase()}`);
-        console.log('='.repeat(80));
 
         let success = false;
 
@@ -262,14 +232,11 @@ class TestRunner {
 
             default:
                 console.error(`❌ Loại test không hợp lệ: ${testType}`);
-                console.log('Các loại test hợp lệ: mock, performance, load, database');
                 return false;
         }
 
         this.endTime = Date.now();
 
-        console.log(`\n${success ? '✅' : '❌'} Test ${testType} ${success ? 'thành công' : 'thất bại'}`);
-        console.log(`⏱️  Thời gian thực hiện: ${((this.endTime - this.startTime) / 1000).toFixed(2)} giây`);
 
         return success;
     }
@@ -281,13 +248,6 @@ class TestRunner {
         this.endTime = Date.now();
         const totalDuration = (this.endTime - this.startTime) / 1000;
 
-        console.log('\n' + '='.repeat(80));
-        console.log('📊 BÁO CÁO TỔNG HỢP CUỐI CÙNG');
-        console.log('='.repeat(80));
-        console.log(`📅 Thời gian bắt đầu: ${new Date(this.startTime).toLocaleString()}`);
-        console.log(`📅 Thời gian kết thúc: ${new Date(this.endTime).toLocaleString()}`);
-        console.log(`⏱️  Tổng thời gian: ${totalDuration.toFixed(2)} giây`);
-        console.log('');
 
         // Thống kê kết quả
         const testNames = {
@@ -300,29 +260,21 @@ class TestRunner {
         let successCount = 0;
         let totalCount = 0;
 
-        console.log('📋 KẾT QUẢ CÁC TEST:');
         for (const [key, name] of Object.entries(testNames)) {
             if (results[key] !== undefined) {
                 totalCount++;
                 const success = results[key];
                 if (success) successCount++;
 
-                console.log(`   ${success ? '✅' : '❌'} ${name}: ${success ? 'THÀNH CÔNG' : 'THẤT BẠI'}`);
             }
         }
 
-        console.log('');
-        console.log(`📈 TỔNG KẾT: ${successCount}/${totalCount} tests thành công (${Math.round(successCount / totalCount * 100)}%)`);
 
         // Đánh giá tổng thể
         if (successCount === totalCount) {
-            console.log('🎉 TẤT CẢ TESTS ĐỀU THÀNH CÔNG! Hệ thống hoạt động tốt.');
         } else if (successCount >= totalCount * 0.75) {
-            console.log('👍 HẦU HẾT TESTS THÀNH CÔNG! Hệ thống hoạt động khá tốt.');
         } else if (successCount >= totalCount * 0.5) {
-            console.log('⚠️  MỘT SỐ TESTS THẤT BẠI! Cần kiểm tra và cải thiện hệ thống.');
         } else {
-            console.log('❌ NHIỀU TESTS THẤT BẠI! Hệ thống cần được kiểm tra kỹ lưỡng.');
         }
 
         // Lưu báo cáo tổng hợp
@@ -348,7 +300,6 @@ class TestRunner {
 
         const filename = `test-runner-report-${Date.now()}.json`;
         fs.writeFileSync(filename, JSON.stringify(report, null, 2));
-        console.log(`\n💾 Báo cáo tổng hợp đã được lưu vào ${filename}`);
     }
 
     /**

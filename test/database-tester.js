@@ -27,7 +27,6 @@ class DatabaseTester {
         try {
             this.client = new Client(this.dbConfig);
             await this.client.connect();
-            console.log('✅ Kết nối database thành công');
             return true;
         } catch (error) {
             console.error('❌ Lỗi kết nối database:', error.message);
@@ -41,7 +40,6 @@ class DatabaseTester {
     async disconnect() {
         if (this.client) {
             await this.client.end();
-            console.log('✅ Đã đóng kết nối database');
         }
     }
 
@@ -79,7 +77,6 @@ class DatabaseTester {
      * Test performance của các query cơ bản
      */
     async testBasicQueries() {
-        console.log('🧪 Testing Basic Database Queries...\n');
 
         const queries = [
             {
@@ -117,16 +114,13 @@ class DatabaseTester {
         const results = [];
 
         for (const query of queries) {
-            console.log(`   📊 ${query.name}...`);
             const result = await this.measureQuery(query.query);
             result.name = query.name;
             result.description = query.description;
             results.push(result);
 
             if (result.success) {
-                console.log(`      ✅ ${result.duration}ms - ${result.rowCount} rows`);
             } else {
-                console.log(`      ❌ ${result.duration}ms - Error: ${result.error}`);
             }
         }
 
@@ -137,7 +131,6 @@ class DatabaseTester {
      * Test performance của các query tìm kiếm
      */
     async testSearchQueries() {
-        console.log('\n🔍 Testing Search Queries...\n');
 
         const searchQueries = [
             {
@@ -181,16 +174,13 @@ class DatabaseTester {
         const results = [];
 
         for (const query of searchQueries) {
-            console.log(`   🔍 ${query.name}...`);
             const result = await this.measureQuery(query.query, query.params);
             result.name = query.name;
             result.description = query.description;
             results.push(result);
 
             if (result.success) {
-                console.log(`      ✅ ${result.duration}ms - ${result.rowCount} rows`);
             } else {
-                console.log(`      ❌ ${result.duration}ms - Error: ${result.error}`);
             }
         }
 
@@ -201,7 +191,6 @@ class DatabaseTester {
      * Test performance của các query phức tạp với JOIN
      */
     async testComplexQueries() {
-        console.log('\n🔗 Testing Complex Queries with JOINs...\n');
 
         const complexQueries = [
             {
@@ -274,16 +263,13 @@ class DatabaseTester {
         const results = [];
 
         for (const query of complexQueries) {
-            console.log(`   🔗 ${query.name}...`);
             const result = await this.measureQuery(query.query);
             result.name = query.name;
             result.description = query.description;
             results.push(result);
 
             if (result.success) {
-                console.log(`      ✅ ${result.duration}ms - ${result.rowCount} rows`);
             } else {
-                console.log(`      ❌ ${result.duration}ms - Error: ${result.error}`);
             }
         }
 
@@ -294,7 +280,6 @@ class DatabaseTester {
      * Test performance của pagination
      */
     async testPaginationPerformance() {
-        console.log('\n📄 Testing Pagination Performance...\n');
 
         const paginationTests = [
             {
@@ -332,16 +317,13 @@ class DatabaseTester {
         const results = [];
 
         for (const test of paginationTests) {
-            console.log(`   📄 ${test.name}...`);
             const result = await this.measureQuery(test.query);
             result.name = test.name;
             result.description = test.description;
             results.push(result);
 
             if (result.success) {
-                console.log(`      ✅ ${result.duration}ms - ${result.rowCount} rows`);
             } else {
-                console.log(`      ❌ ${result.duration}ms - Error: ${result.error}`);
             }
         }
 
@@ -352,7 +334,6 @@ class DatabaseTester {
      * Test performance của các query với index
      */
     async testIndexPerformance() {
-        console.log('\n📊 Testing Index Performance...\n');
 
         const indexTests = [
             {
@@ -389,16 +370,13 @@ class DatabaseTester {
         const results = [];
 
         for (const test of indexTests) {
-            console.log(`   📊 ${test.name}...`);
             const result = await this.measureQuery(test.query, test.params);
             result.name = test.name;
             result.description = test.description;
             results.push(result);
 
             if (result.success) {
-                console.log(`      ✅ ${result.duration}ms - ${result.rowCount} rows`);
             } else {
-                console.log(`      ❌ ${result.duration}ms - Error: ${result.error}`);
             }
         }
 
@@ -409,7 +387,6 @@ class DatabaseTester {
      * Test performance của các query thống kê
      */
     async testAnalyticsQueries() {
-        console.log('\n📈 Testing Analytics Queries...\n');
 
         const analyticsQueries = [
             {
@@ -472,16 +449,13 @@ class DatabaseTester {
         const results = [];
 
         for (const query of analyticsQueries) {
-            console.log(`   📈 ${query.name}...`);
             const result = await this.measureQuery(query.query);
             result.name = query.name;
             result.description = query.description;
             results.push(result);
 
             if (result.success) {
-                console.log(`      ✅ ${result.duration}ms - ${result.rowCount} rows`);
             } else {
-                console.log(`      ❌ ${result.duration}ms - Error: ${result.error}`);
             }
         }
 
@@ -492,7 +466,6 @@ class DatabaseTester {
      * Test concurrent queries
      */
     async testConcurrentQueries() {
-        console.log('\n⚡ Testing Concurrent Queries...\n');
 
         const concurrentQueries = [
             'SELECT COUNT(*) FROM book_titles',
@@ -505,7 +478,6 @@ class DatabaseTester {
         const concurrency = 10;
         const results = [];
 
-        console.log(`   🚀 Chạy ${concurrentQueries.length} queries với concurrency ${concurrency}...`);
 
         for (let i = 0; i < concurrency; i++) {
             const promises = concurrentQueries.map(query => this.measureQuery(query));
@@ -518,10 +490,6 @@ class DatabaseTester {
         const maxDuration = Math.max(...successfulQueries.map(r => r.duration));
         const minDuration = Math.min(...successfulQueries.map(r => r.duration));
 
-        console.log(`   ✅ Total queries: ${results.length}`);
-        console.log(`   ✅ Successful: ${successfulQueries.length}`);
-        console.log(`   ⏱️  Avg duration: ${avgDuration.toFixed(2)}ms`);
-        console.log(`   📊 Min/Max: ${minDuration}ms / ${maxDuration}ms`);
 
         return {
             name: 'Concurrent Queries Test',
@@ -538,7 +506,6 @@ class DatabaseTester {
      * Chạy tất cả database tests
      */
     async runAllTests() {
-        console.log('🚀 Bắt đầu Database Performance Testing...\n');
 
         const allResults = [];
 
@@ -582,28 +549,21 @@ class DatabaseTester {
      * Tạo báo cáo tổng hợp
      */
     generateReport(allResults) {
-        console.log('\n📊 BÁO CÁO TỔNG HỢP DATABASE PERFORMANCE\n');
-        console.log('='.repeat(80));
 
         // Lọc kết quả hợp lệ
         const validResults = allResults.filter(r => r.duration !== undefined);
 
         if (validResults.length === 0) {
-            console.log('❌ Không có kết quả hợp lệ để phân tích');
             return { summary: {}, details: allResults };
         }
 
         // Sắp xếp theo thời gian thực thi
         const sortedByDuration = [...validResults].sort((a, b) => a.duration - b.duration);
 
-        console.log('\n🏆 TOP 5 QUERIES NHANH NHẤT:');
         sortedByDuration.slice(0, 5).forEach((result, index) => {
-            console.log(`${index + 1}. ${result.name}: ${result.duration}ms`);
         });
 
-        console.log('\n🐌 TOP 5 QUERIES CHẬM NHẤT:');
         sortedByDuration.slice(-5).reverse().forEach((result, index) => {
-            console.log(`${index + 1}. ${result.name}: ${result.duration}ms`);
         });
 
         // Thống kê tổng quan
@@ -613,22 +573,12 @@ class DatabaseTester {
         const maxDuration = Math.max(...validResults.map(r => r.duration));
         const minDuration = Math.min(...validResults.map(r => r.duration));
 
-        console.log('\n📈 THỐNG KÊ TỔNG QUAN:');
-        console.log(`   Tổng số queries: ${totalQueries}`);
-        console.log(`   Queries thành công: ${successfulQueries}/${totalQueries} (${Math.round(successfulQueries / totalQueries * 100)}%)`);
-        console.log(`   Thời gian trung bình: ${avgDuration.toFixed(2)}ms`);
-        console.log(`   Thời gian nhanh nhất: ${minDuration}ms`);
-        console.log(`   Thời gian chậm nhất: ${maxDuration}ms`);
 
         // Phân loại theo performance
         const fastQueries = validResults.filter(r => r.duration < 10).length;
         const mediumQueries = validResults.filter(r => r.duration >= 10 && r.duration < 100).length;
         const slowQueries = validResults.filter(r => r.duration >= 100).length;
 
-        console.log('\n⚡ PHÂN LOẠI PERFORMANCE:');
-        console.log(`   Nhanh (<10ms): ${fastQueries} queries`);
-        console.log(`   Trung bình (10-100ms): ${mediumQueries} queries`);
-        console.log(`   Chậm (>100ms): ${slowQueries} queries`);
 
         return {
             summary: {
@@ -656,7 +606,6 @@ class DatabaseTester {
         };
 
         fs.writeFileSync(filename, JSON.stringify(data, null, 2));
-        console.log(`\n💾 Kết quả đã được lưu vào ${filename}`);
     }
 }
 
@@ -679,48 +628,39 @@ async function main() {
 
         switch (testType) {
             case 'all':
-                console.log('🎯 Chạy tất cả database tests...\n');
                 allResults = await tester.runAllTests();
                 break;
 
             case 'basic':
-                console.log('🎯 Chạy basic query tests...\n');
                 allResults = await tester.testBasicQueries();
                 break;
 
             case 'search':
-                console.log('🎯 Chạy search query tests...\n');
                 allResults = await tester.testSearchQueries();
                 break;
 
             case 'complex':
-                console.log('🎯 Chạy complex query tests...\n');
                 allResults = await tester.testComplexQueries();
                 break;
 
             case 'pagination':
-                console.log('🎯 Chạy pagination tests...\n');
                 allResults = await tester.testPaginationPerformance();
                 break;
 
             case 'index':
-                console.log('🎯 Chạy index performance tests...\n');
                 allResults = await tester.testIndexPerformance();
                 break;
 
             case 'analytics':
-                console.log('🎯 Chạy analytics tests...\n');
                 allResults = await tester.testAnalyticsQueries();
                 break;
 
             case 'concurrent':
-                console.log('🎯 Chạy concurrent query tests...\n');
                 const concurrentResult = await tester.testConcurrentQueries();
                 allResults = [concurrentResult];
                 break;
 
             default:
-                console.log('❌ Loại test không hợp lệ. Sử dụng: all, basic, search, complex, pagination, index, analytics, concurrent');
                 return;
         }
 
