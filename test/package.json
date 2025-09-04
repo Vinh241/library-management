@@ -1,0 +1,55 @@
+{
+  "name": "library-management-testing",
+  "version": "1.0.0",
+  "description": "Testing suite for Library Management System - Mock Data Generator, Performance Tester, Load Tester, and Database Tester",
+  "main": "test-runner.js",
+  "scripts": {
+    "test": "node test-runner.js all",
+    "test:mock": "node test-runner.js mock",
+    "test:performance": "node test-runner.js performance",
+    "test:load": "node test-runner.js load",
+    "test:database": "node test-runner.js database",
+    "mock:1m": "node mock-data-generator.js 1m",
+    "mock:10m": "node mock-data-generator.js 10m",
+    "mock:100m": "node mock-data-generator.js 100m",
+    "perf:all": "node performance-tester.js all",
+    "perf:pagination": "node performance-tester.js pagination",
+    "perf:search": "node performance-tester.js search",
+    "load:all": "node load-tester.js all",
+    "load:stress": "node load-tester.js stress",
+    "load:endurance": "node load-tester.js endurance 10",
+    "db:all": "node database-tester.js all",
+    "db:basic": "node database-tester.js basic",
+    "db:search": "node database-tester.js search",
+    "db:complex": "node database-tester.js complex",
+    "db:pagination": "node database-tester.js pagination",
+    "db:index": "node database-tester.js index",
+    "db:analytics": "node database-tester.js analytics",
+    "db:concurrent": "node database-tester.js concurrent"
+  },
+  "keywords": [
+    "library-management",
+    "testing",
+    "performance",
+    "load-testing",
+    "database-testing",
+    "mock-data",
+    "api-testing"
+  ],
+  "author": "Library Management Team",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/library-management.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/library-management/issues"
+  },
+  "homepage": "https://github.com/your-org/library-management#readme"
+}

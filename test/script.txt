@@ -1,0 +1,23 @@
+npm run mock:1m    # 1 triệu sách
+npm run mock:10m   # 10 triệu sách
+npm run mock:100m  # 100 triệu sách
+
+# Performance
+npm run perf:all
+npm run perf:pagination
+npm run perf:search
+
+# Load testing
+npm run load:all
+npm run load:stress
+npm run load:endurance
+
+# Database
+npm run db:all
+npm run db:basic
+npm run db:search
+npm run db:complex
+
+npm test
+# hoặc
+node test-runner.js all

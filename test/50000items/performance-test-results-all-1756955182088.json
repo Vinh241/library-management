@@ -1,0 +1,3442 @@
+{
+  "timestamp": "2025-09-04T03:06:22.088Z",
+  "testType": "Performance Testing",
+  "results": {
+    "summary": {
+      "totalTests": 16,
+      "successfulTests": 14,
+      "avgResponseTime": 29.309375,
+      "maxResponseTime": 124.2,
+      "minResponseTime": 0,
+      "fastEndpoints": 14,
+      "mediumEndpoints": 2,
+      "slowEndpoints": 0
+    },
+    "details": [
+      {
+        "name": "Get All Books (Page 1)",
+        "url": "http://localhost:8080/api/books?page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 68,
+        "minDuration": 61,
+        "maxDuration": 101,
+        "avgResponseSize": 9579,
+        "totalResponseSize": 191580,
+        "results": [
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 101,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:12.605Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 77,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:12.682Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 70,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:12.752Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 68,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:12.820Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 70,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:12.890Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 68,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:12.958Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 65,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.023Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 66,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.089Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 69,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.159Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 66,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.225Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 63,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.288Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 62,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.350Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 67,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.417Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 64,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.481Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 67,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.548Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 66,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.614Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 61,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.676Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 63,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.739Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 66,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.805Z"
+          },
+          {
+            "name": "Get All Books (Page 1)",
+            "url": "http://localhost:8080/api/books?page=0&size=20",
+            "duration": 61,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9579,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.866Z"
+          }
+        ]
+      },
+      {
+        "name": "Get All Books (Page 10)",
+        "url": "http://localhost:8080/api/books?page=9&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 69.75,
+        "minDuration": 59,
+        "maxDuration": 203,
+        "avgResponseSize": 9631,
+        "totalResponseSize": 192620,
+        "results": [
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 62,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.928Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 63,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:13.991Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 65,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.056Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 61,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.117Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 65,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.183Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 66,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.249Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 68,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.317Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 66,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.383Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 61,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.444Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 65,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.509Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 60,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.569Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 61,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.630Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 61,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.691Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 59,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.750Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 60,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.810Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 64,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.874Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 60,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.934Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 60,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:14.994Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 203,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.198Z"
+          },
+          {
+            "name": "Get All Books (Page 10)",
+            "url": "http://localhost:8080/api/books?page=9&size=20",
+            "duration": 65,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9631,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.263Z"
+          }
+        ]
+      },
+      {
+        "name": "Search Books",
+        "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 124.2,
+        "minDuration": 116,
+        "maxDuration": 144,
+        "avgResponseSize": 10204,
+        "totalResponseSize": 204080,
+        "results": [
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 144,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.407Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 122,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.529Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 130,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.659Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 116,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.775Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 121,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:15.896Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 116,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.012Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 124,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.136Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 127,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.263Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 124,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.388Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 116,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.504Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 138,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.642Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 125,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.767Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 128,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:16.895Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 122,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.017Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 122,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.139Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 116,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.255Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 120,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.375Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 129,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.504Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 126,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.630Z"
+          },
+          {
+            "name": "Search Books",
+            "url": "http://localhost:8080/api/books/search?keyword=java&page=0&size=20",
+            "duration": 118,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10204,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.748Z"
+          }
+        ]
+      },
+      {
+        "name": "Advanced Search Books",
+        "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 115.55,
+        "minDuration": 107,
+        "maxDuration": 126,
+        "avgResponseSize": 10280,
+        "totalResponseSize": 205600,
+        "results": [
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 126,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.874Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 116,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:17.990Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 110,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.100Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 109,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.209Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 111,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.320Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 118,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.438Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 120,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.558Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 116,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.674Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 111,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.785Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 107,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:18.892Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 122,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.014Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 122,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.136Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 114,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.250Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 113,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.363Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 117,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.480Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 114,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.594Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 119,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.713Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 118,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.831Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 113,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:19.944Z"
+          },
+          {
+            "name": "Advanced Search Books",
+            "url": "http://localhost:8080/api/books/advanced-search?title=java&author=robert&page=0&size=20",
+            "duration": 115,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10280,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.059Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Book by ID",
+        "url": "http://localhost:8080/api/books/1",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 7.8,
+        "minDuration": 6,
+        "maxDuration": 9,
+        "avgResponseSize": 372,
+        "totalResponseSize": 7440,
+        "results": [
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.068Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.075Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.084Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.093Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.100Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.109Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.118Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.126Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.133Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.140Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.148Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.154Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.161Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.169Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.178Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.185Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.193Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.201Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.209Z"
+          },
+          {
+            "name": "Get Book by ID",
+            "url": "http://localhost:8080/api/books/1",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 372,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.215Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Book by ISBN",
+        "url": "http://localhost:8080/api/books/isbn/978-123456789",
+        "iterations": 20,
+        "successCount": 0,
+        "successRate": 0,
+        "avgDuration": 0,
+        "minDuration": null,
+        "maxDuration": 0,
+        "avgResponseSize": 0,
+        "totalResponseSize": 0,
+        "results": [
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 11,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.227Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 4,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.231Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 4,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.235Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 7,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.242Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.245Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.248Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.251Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.254Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.257Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 2,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.259Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.262Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.265Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 4,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.269Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 4,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.273Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 4,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.277Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.280Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.283Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 2,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.285Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 4,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.289Z"
+          },
+          {
+            "name": "Get Book by ISBN",
+            "url": "http://localhost:8080/api/books/isbn/978-123456789",
+            "duration": 3,
+            "success": false,
+            "statusCode": 404,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.292Z"
+          }
+        ]
+      },
+      {
+        "name": "Get All Book Items (Page 1)",
+        "url": "http://localhost:8080/api/book-items?page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 17.45,
+        "minDuration": 14,
+        "maxDuration": 22,
+        "avgResponseSize": 9415,
+        "totalResponseSize": 188300,
+        "results": [
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 21,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.313Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.331Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.349Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.366Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.381Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.397Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.412Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.426Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.442Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.459Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.476Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.492Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.508Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 21,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.529Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.548Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.567Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 20,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.587Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 22,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.609Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.625Z"
+          },
+          {
+            "name": "Get All Book Items (Page 1)",
+            "url": "http://localhost:8080/api/book-items?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9415,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.641Z"
+          }
+        ]
+      },
+      {
+        "name": "Get All Book Items (Page 10)",
+        "url": "http://localhost:8080/api/book-items?page=9&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 18.55,
+        "minDuration": 16,
+        "maxDuration": 22,
+        "avgResponseSize": 10165,
+        "totalResponseSize": 203300,
+        "results": [
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.661Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.678Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.697Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.715Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.732Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.751Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.769Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 20,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.789Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.806Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.822Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.840Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.859Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 20,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.879Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 21,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.900Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 21,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.922Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 22,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.944Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 19,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.963Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.981Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:20.998Z"
+          },
+          {
+            "name": "Get All Book Items (Page 10)",
+            "url": "http://localhost:8080/api/book-items?page=9&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 10165,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.014Z"
+          }
+        ]
+      },
+      {
+        "name": "Search Book Items",
+        "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+        "iterations": 20,
+        "successCount": 0,
+        "successRate": 0,
+        "avgDuration": 0,
+        "minDuration": null,
+        "maxDuration": 0,
+        "avgResponseSize": 0,
+        "totalResponseSize": 0,
+        "results": [
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 23,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.037Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 6,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.043Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.048Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.053Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.058Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.063Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.067Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.071Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.077Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.081Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.086Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.090Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.095Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 6,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.101Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.105Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.110Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.114Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.118Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 4,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.122Z"
+          },
+          {
+            "name": "Search Book Items",
+            "url": "http://localhost:8080/api/book-items/search?status=AVAILABLE&page=0&size=20",
+            "duration": 5,
+            "success": false,
+            "statusCode": 403,
+            "responseSize": 0,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.127Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Book Items by Status",
+        "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 13.35,
+        "minDuration": 12,
+        "maxDuration": 18,
+        "avgResponseSize": 9370,
+        "totalResponseSize": 187400,
+        "results": [
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 18,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.145Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 13,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.158Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.170Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.185Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.199Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 13,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.212Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.227Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 13,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.240Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.252Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.266Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 13,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.279Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.291Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 13,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.304Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.316Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.328Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.340Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.353Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 13,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.366Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.378Z"
+          },
+          {
+            "name": "Get Book Items by Status",
+            "url": "http://localhost:8080/api/book-items/status/AVAILABLE?page=0&size=20",
+            "duration": 17,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 9370,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.395Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Book Item by ID",
+        "url": "http://localhost:8080/api/book-items/1",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 4.6,
+        "minDuration": 3,
+        "maxDuration": 8,
+        "avgResponseSize": 474,
+        "totalResponseSize": 9480,
+        "results": [
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.401Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.406Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.410Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.415Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.418Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.422Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.427Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.435Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.439Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.444Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.447Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.452Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.457Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.462Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.466Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.470Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.475Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.479Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.483Z"
+          },
+          {
+            "name": "Get Book Item by ID",
+            "url": "http://localhost:8080/api/book-items/1",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 474,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.487Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Book Item by Code",
+        "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 4,
+        "minDuration": 3,
+        "maxDuration": 6,
+        "avgResponseSize": 494,
+        "totalResponseSize": 9880,
+        "results": [
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.492Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.496Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.500Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.503Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.507Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.511Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.515Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.519Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.523Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.529Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.533Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.537Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.542Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.546Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.550Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.553Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.558Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.562Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.565Z"
+          },
+          {
+            "name": "Get Book Item by Code",
+            "url": "http://localhost:8080/api/book-items/code/ITEM-00000001",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 494,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.568Z"
+          }
+        ]
+      },
+      {
+        "name": "Get My Borrow Requests",
+        "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 6.9,
+        "minDuration": 5,
+        "maxDuration": 12,
+        "avgResponseSize": 719,
+        "totalResponseSize": 14380,
+        "results": [
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.581Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.589Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.596Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.602Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.610Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.617Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.623Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.629Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.635Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.642Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.647Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.653Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.659Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.665Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.673Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.681Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.687Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.696Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.702Z"
+          },
+          {
+            "name": "Get My Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/my-requests?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 719,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.708Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Pending Requests for Review",
+        "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 4,
+        "minDuration": 3,
+        "maxDuration": 6,
+        "avgResponseSize": 127,
+        "totalResponseSize": 2540,
+        "results": [
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.714Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.717Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.720Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.724Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.728Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.732Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.736Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.740Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.744Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.748Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.753Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.757Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.761Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.765Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.769Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.774Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.778Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.781Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.785Z"
+          },
+          {
+            "name": "Get Pending Requests for Review",
+            "url": "http://localhost:8080/api/borrow-requests/pending-review?page=0&size=20",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 127,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.789Z"
+          }
+        ]
+      },
+      {
+        "name": "Get Library Borrow Requests",
+        "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 11.25,
+        "minDuration": 6,
+        "maxDuration": 16,
+        "avgResponseSize": 3485,
+        "totalResponseSize": 69700,
+        "results": [
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.799Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.806Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.814Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 6,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.820Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 9,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.829Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.836Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.843Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.850Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 8,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.858Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 16,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.874Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.889Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.903Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.917Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.932Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.946Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.960Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.974Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 15,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:21.989Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 14,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.003Z"
+          },
+          {
+            "name": "Get Library Borrow Requests",
+            "url": "http://localhost:8080/api/borrow-requests/library/1?page=0&size=20",
+            "duration": 12,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 3485,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.015Z"
+          }
+        ]
+      },
+      {
+        "name": "Check Has Pending Request",
+        "url": "http://localhost:8080/api/borrow-requests/has-pending",
+        "iterations": 20,
+        "successCount": 20,
+        "successRate": 100,
+        "avgDuration": 3.55,
+        "minDuration": 2,
+        "maxDuration": 7,
+        "avgResponseSize": 27,
+        "totalResponseSize": 540,
+        "results": [
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 7,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.023Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.027Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 2,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.029Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.032Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.036Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.039Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.044Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.047Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.050Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.053Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.056Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 5,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.061Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.064Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.067Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.070Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.074Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 4,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.078Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.081Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.084Z"
+          },
+          {
+            "name": "Check Has Pending Request",
+            "url": "http://localhost:8080/api/borrow-requests/has-pending",
+            "duration": 3,
+            "success": true,
+            "statusCode": 200,
+            "responseSize": 27,
+            "error": null,
+            "timestamp": "2025-09-04T03:06:22.087Z"
+          }
+        ]
+      }
+    ]
+  }
+}
