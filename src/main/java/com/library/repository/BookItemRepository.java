@@ -78,6 +78,13 @@ public interface BookItemRepository extends JpaRepository<BookItem, Integer> {
     List<BookItem> findAvailableItemsByBookTitle(@Param("bookTitle") BookTitle bookTitle);
 
     /**
+     * Lấy N cuốn AVAILABLE theo book title với pessimistic write lock để gán an toàn
+     */
+    @Lock(LockModeType.PESSIMISTIC_WRITE)
+    @Query("SELECT bi FROM BookItem bi WHERE bi.bookTitle = :bookTitle AND bi.status = 'AVAILABLE'")
+    List<BookItem> findAvailableItemsByBookTitleForUpdate(@Param("bookTitle") BookTitle bookTitle);
+
+    /**
      * Tìm book items theo shelf location
      */
     List<BookItem> findByShelfLocationContainingIgnoreCase(String shelfLocation);

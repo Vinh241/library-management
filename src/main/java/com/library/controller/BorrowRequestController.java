@@ -2,6 +2,8 @@ package com.library.controller;
 
 import com.library.dto.request.BorrowRequestRequest;
 import com.library.dto.request.ReviewBorrowRequestRequest;
+import com.library.dto.request.BorrowByTitleRequest;
+import com.library.dto.response.BorrowByTitleResponse;
 import com.library.dto.response.BorrowRequestResponse;
 import com.library.dto.response.PagedResponse;
 import com.library.entity.Account;
@@ -46,6 +48,25 @@ public class BorrowRequestController {
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(createErrorResponse("An error occurred while creating borrow request"));
+        }
+    }
+
+    /**
+     * Tạo nhiều yêu cầu mượn theo đầu sách và số lượng
+     * POST /api/borrow-requests/by-title
+     */
+    @PostMapping("/by-title")
+    public ResponseEntity<?> createBorrowRequestsByTitle(@Valid @RequestBody BorrowByTitleRequest request) {
+        try {
+            Account currentUser = getCurrentUser();
+            BorrowByTitleResponse response = borrowRequestService.createBorrowRequestsByTitle(request, currentUser.getId());
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body(createErrorResponse(e.getMessage()));
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(createErrorResponse("An error occurred while creating borrow requests by title"));
         }
     }
 

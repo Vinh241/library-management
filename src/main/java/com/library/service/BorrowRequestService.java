@@ -2,11 +2,14 @@ package com.library.service;
 
 import com.library.dto.request.BorrowRequestRequest;
 import com.library.dto.request.ReviewBorrowRequestRequest;
+import com.library.dto.request.BorrowByTitleRequest;
+import com.library.dto.response.BorrowByTitleResponse;
 import com.library.dto.response.BorrowRequestResponse;
 import com.library.dto.response.PagedResponse;
 import com.library.entity.*;
 import com.library.repository.BorrowRequestRepository;
 import com.library.repository.BookItemRepository;
+import com.library.repository.BookTitleRepository;
 import com.library.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -37,6 +40,9 @@ public class BorrowRequestService {
 
     @Autowired
     private BorrowingTransactionService borrowingTransactionService;
+
+    @Autowired
+    private BookTitleRepository bookTitleRepository;
 
     @Transactional(rollbackFor = {Exception.class})
     public BorrowRequestResponse createBorrowRequest(BorrowRequestRequest request, Integer requesterId) {
@@ -116,6 +122,93 @@ public class BorrowRequestService {
             BorrowRequest savedRequest = borrowRequestRepository.save(borrowRequest);
             return new BorrowRequestResponse(savedRequest);
         }
+    }
+
+    /**
+     * Tạo nhiều borrow requests theo book title và quantity
+     */
+    @Transactional(rollbackFor = {Exception.class})
+    public BorrowByTitleResponse createBorrowRequestsByTitle(BorrowByTitleRequest request, Integer requesterId) {
+        if (request.getQuantity() == null || request.getQuantity() < 1) {
+            throw new RuntimeException("Quantity must be at least 1");
+        }
+
+        if (request.getRequestedBorrowDate().isBefore(LocalDate.now())) {
+            throw new RuntimeException("Requested borrow date cannot be in the past");
+        }
+        if (request.getRequestedReturnDate().isBefore(request.getRequestedBorrowDate())) {
+            throw new RuntimeException("Requested return date must be after borrow date");
+        }
+
+        Account requester = accountRepository.findById(requesterId)
+                .orElseThrow(() -> new RuntimeException("Requester not found with id: " + requesterId));
+
+        BookTitle bookTitle = bookTitleRepository.findById(request.getBookTitleId())
+                .orElseThrow(() -> new RuntimeException("Book title not found with id: " + request.getBookTitleId()));
+
+        // Lock and fetch available items for update
+        List<BookItem> availableItems = bookItemRepository.findAvailableItemsByBookTitleForUpdate(bookTitle);
+
+        int toAssign = Math.min(request.getQuantity(), availableItems.size());
+        if (toAssign == 0) {
+            return new BorrowByTitleResponse(bookTitle.getId(), request.getQuantity(), 0, request.getQuantity(), List.of());
+        }
+
+        // Check pending requests cap for user (max 5). We will cap creations accordingly for READER flow.
+        long existingPending = borrowRequestRepository.countByRequesterIdAndStatus(
+                requesterId, BorrowRequest.BorrowRequestStatus.PENDING);
+
+        int maxCreatablePending = 5;
+        int allowedForPending = (int)Math.max(0, maxCreatablePending - existingPending);
+
+        List<BorrowRequestResponse> createdResponses = new java.util.ArrayList<>();
+        int createdCount = 0;
+
+        for (int i = 0; i < toAssign; i++) {
+            BookItem bookItem = availableItems.get(i);
+
+            // Double-check availability
+            if (!bookItem.isAvailable()) {
+                continue;
+            }
+
+            BorrowRequest borrowRequest = new BorrowRequest(
+                    bookItem,
+                    requester,
+                    request.getRequestedBorrowDate(),
+                    request.getRequestedReturnDate(),
+                    request.getRequestReason()
+            );
+
+            boolean autoApprove = shouldAutoApproveBorrowRequest(requester, bookItem);
+            if (autoApprove) {
+                borrowRequest.approve(requester, "Auto-approved based on role and library/province permissions");
+                BorrowRequest saved = borrowRequestRepository.save(borrowRequest);
+                try {
+                    borrowingTransactionService.createBorrowingTransaction(saved, requester);
+                } catch (Exception e) {
+                    throw new RuntimeException("Failed to create borrowing transaction: " + e.getMessage());
+                }
+                createdResponses.add(new BorrowRequestResponse(saved));
+                createdCount++;
+            } else {
+                // Respect pending request cap for READER flow
+                if (allowedForPending <= 0) {
+                    break;
+                }
+                bookItem.markAsReserved();
+                bookItemRepository.save(bookItem);
+                BorrowRequest saved = borrowRequestRepository.save(borrowRequest);
+                createdResponses.add(new BorrowRequestResponse(saved));
+                createdCount++;
+                allowedForPending--;
+            }
+        }
+
+        int unavailable = request.getQuantity() - createdCount;
+        if (unavailable < 0) unavailable = 0;
+
+        return new BorrowByTitleResponse(bookTitle.getId(), request.getQuantity(), createdCount, unavailable, createdResponses);
     }
 
     // === REVIEW BORROW REQUEST ===
